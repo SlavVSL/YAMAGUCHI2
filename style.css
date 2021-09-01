@@ -1,0 +1,108 @@
+body{
+    font-family: 'Montserrat', sans-serif;   
+    background-color: #F3F3F3;   
+    max-width: 1920px;  
+    max-height: 900px;
+    background-color: rgba(24, 24, 24, 1); 
+    color: rgba(255, 255, 255, 1);    
+}
+.section{   
+    height: auto;
+    margin: 0 auto;       
+}
+.container{
+    background-image: url(/YAMAGUCHI2/img/Vector.png);
+    width: 100%;
+    justify-content: center;
+    align-items: center; 
+}
+.main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center;
+    align-items: center;    
+}
+.text{    
+    display: block;
+    text-align: start;
+    border: 1px solid red;
+    flex-basis: 30%;        
+}
+.girl-img{
+    border: 1px solid red;
+    flex-basis: 20%;    
+}
+.messenger-img{
+    border: 1px solid red;
+    flex-basis: 20%;        
+}
+.messenger-img h2,  .messenger-img h3{
+    display: none;
+    margin-left: 200px;
+}
+.text h1{
+    font-size: 56px;     
+}
+.text h2{
+    font-size: 45px; 
+    font-weight: 900;    
+}
+.text h3{    
+    font-weight: 900;
+    font-size: 58px;  
+    padding-left: 20px;         
+}
+.text p{
+    font-size: 22px;
+    line-height: 34px;    
+}
+
+.hole{
+    margin: 0 auto;
+    width: 193px;
+    height: 61px;
+    border-radius: 50%;
+    background-color: black;   
+    z-index: 1;
+    
+}
+.hole:hover{
+    transform: scale(2,1);
+    transition: transform .3s;
+}
+.girl-img{
+    display: block;    
+}
+.girl-img_ico{     
+    transform: translateY(850px);    
+    transition: transform .9s;  
+}
+.girl-img_ico:hover{       
+    transform: translateY(0%);    
+}
+
+
+@media (max-width: 640px) {
+.main {
+    width: 100%;    
+}
+.text-say{
+    order: 1;
+}
+.girl-img{
+    order:2;
+}
+.messenger-img{
+    order:3;
+}
+.messenger-img h2, .messenger-img h3 {
+    display: block;    
+}
+
+.text-saysay h2, .text-saysay h3{
+    display: none;          
+}
+
+
+}
